@@ -31,6 +31,5 @@ public class Main {
         System.out.println(myCalculator.subtract(812, 369));
         System.out.println(myCalculator.multiply(12, 24));
         System.out.println(myCalculator.divide(125, 5));
-        System.out.println(myCalculator.multiply(358, 752));
     }
 }
