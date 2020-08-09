@@ -29,7 +29,7 @@ public class Main {
         Main myCalculator = new Main();
         System.out.println(myCalculator.add(81, 62));
         System.out.println(myCalculator.subtract(812, 369));
-        System.out.println(myCalculator.multiply(12, 20));
+        System.out.println(myCalculator.multiply(12, 12));
         System.out.println(myCalculator.divide(125, 20));
     }
 }
