@@ -24,12 +24,4 @@ public class Main {
     public int divide(int a, int b) {
         return a / b;
     }
-
-    public static void main(String[] args) {
-        Main myCalculator = new Main();
-        System.out.println(myCalculator.add(81, 62));
-        System.out.println(myCalculator.subtract(812, 369));
-        System.out.println(myCalculator.multiply(12, 15));
-        System.out.println(myCalculator.divide(125, 20));
-    }
 }
