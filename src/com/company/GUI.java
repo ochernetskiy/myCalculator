@@ -22,7 +22,6 @@ public class GUI extends JFrame {
         }
 
         getContentPane().add(grid);
-        pack();
         setVisible(true);
 
     }
