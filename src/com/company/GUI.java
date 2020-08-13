@@ -4,19 +4,27 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class GUI {
+public class GUI extends JFrame {
 
-    static GraphicsConfiguration gc;
+
     public GUI() {
-        JFrame frame = new JFrame(gc);
-        frame.setTitle("My First Application");
-        frame.setSize(350, 500);
-        frame.setLayout(null);
-        frame.setVisible(true);
+        setTitle("Calculator");
+        setSize(350, 500);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-        JButton button = new JButton("Button");
-        frame.add(button);
-        button.setBounds(0,0,50,50);
+        JPanel grid = new JPanel();
+
+        GridLayout layout = new GridLayout(4, 4, 5, 5);
+        grid.setLayout(layout);
+
+        for (int b = 0; b < 10; b++) {
+            grid.add(new JButton("Num" + b));
+        }
+
+        getContentPane().add(grid);
+        pack();
+        setVisible(true);
+
     }
 
     public static void main(String[] args) {
