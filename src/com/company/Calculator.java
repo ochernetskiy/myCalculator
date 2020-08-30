@@ -143,7 +143,7 @@ public class Calculator implements ActionListener {
             result = (Double.parseDouble(operand1) / Double.parseDouble(operand2));
         else
             result = (Double.parseDouble(operand1) * Double.parseDouble(operand2));
-        return operand1 + operator + operand2 + "=" +result;
+        return operand1 + operator + operand2 + "=" +result
 
     }
 
