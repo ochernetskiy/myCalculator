@@ -135,16 +135,16 @@ public class Calculator implements ActionListener {
             }
         }
 
-        if (operator.equals("+"))
+        if (operator.equals("+")) {
             result = (Double.parseDouble(operand1) + Double.parseDouble(operand2));
-        else if (operator.equals("-"))
+        }else if (operator.equals("-")) {
             result = (Double.parseDouble(operand1) - Double.parseDouble(operand2));
-        else if (operator.equals("/"))
+        }else if (operator.equals("/")) {
             result = (Double.parseDouble(operand1) / Double.parseDouble(operand2));
-        else
+        }else {
             result = (Double.parseDouble(operand1) * Double.parseDouble(operand2));
-        return operand1 + operator + operand2 + "=" +result;
-
+        }
+            return operand1 + operator + operand2 + "=" + result;
     }
 
 }
