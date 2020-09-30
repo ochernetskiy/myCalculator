@@ -108,7 +108,11 @@ public class Calculator implements ActionListener {
         if (command.charAt(0) == 'C') {
             field.setText("");
         }else if (command.charAt(0) == '=') {
-            field.setText(evaluate(field.getText()));
+            try {
+                field.setText(evaluate(field.getText()));
+            } catch (NumberFormatException exc) {
+                System.out.println("Я выполнюсь, если произойдет ошибка.");
+            }
         }else {
             field.setText(field.getText() + command);
         }
@@ -146,5 +150,4 @@ public class Calculator implements ActionListener {
         }
             return operand1 + operator + operand2 + "=" + result;
     }
-
 }
